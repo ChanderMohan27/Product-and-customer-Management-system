@@ -302,9 +302,7 @@ while True:
     print('press 3: Display existing Products:')
     print('press 4: Adjust the discount rates of a VIP member')
     print('press 5: Adjust the threshold limit of all VIP members')
-    print('press 6: Display all orders')
-    print('press 7: Display all orders of a Customer')
-    print('press 8: Exit the program')
+    print('press 0: Exit the program')
     print('#' * 20)
     
     #Take User_Input from user
@@ -320,7 +318,7 @@ while True:
             Product_Name = input('\nEnter the Product Name [enter a valid Product only e.g. TV, juicer, bag, heater]: \n')
             #Find Product from record
             Product  = rec.Find_Product(Product_Name)
-            if Product !=None:
+            if Product !=None: 
                 break
             print('Please enter a valid Product!. The current product is not exist \n')
         
